@@ -1,0 +1,85 @@
+.item {
+  width: 100%;
+  min-width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.img {
+  height: 100%;
+  width: 16vh;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.itemDetails {
+  position: relative;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: linear-gradient(45deg, #be0000, #ffb800);
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  margin: 0 25px;
+
+  box-sizing: border-box;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 60px;
+}
+
+.quantity > p {
+  width: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.increase {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.decrease {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.subtotal {
+  width: 60px;
+  text-align: end;
+}
+
+.removeItem {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  cursor: pointer;
+
+  background-image: linear-gradient(45deg, #be0000, #ffb800);
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
