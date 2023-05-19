@@ -1,7 +1,7 @@
 # TRAMONTO
 Tramonto is a sunset-inspired brand. 🌆
 
-![Uploading Tramonto_landing.png…]()
+<img width="1440" alt="Tramonto_landing" src="https://github.com/lvbn/Tramonto/assets/65773848/d2701fb3-b430-4006-b48e-29876c8f919f">
 
 
 ## Available Scripts
