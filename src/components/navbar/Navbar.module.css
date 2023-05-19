@@ -5,8 +5,6 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
-  /* border: 1px solid rgba(255, 255, 255, 0.18); */
-
 
   box-sizing: border-box;
   width: 100vw;
@@ -46,9 +44,6 @@
 
 .tramonto {
   margin: 0px;
-  /* background: -webkit-linear-gradient(#be0000, #ffb800);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 
   background-color: red;
 

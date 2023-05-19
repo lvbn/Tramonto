@@ -16,26 +16,6 @@ export const ShoppingCartProvider = ({ children }) => {
 
   }
 
-  // const increaseCartQuantity = (id) => {
-  //   setCartItems(currItems => {
-  //     // if there is no such item in the cart yet
-  //     if (currItems.find(item => item.id === id) == null) {
-  //       // console.log('id: ', id)
-  //       return [...currItems, {id, quantity: 1 }]
-  //     } else {
-  //       return currItems.map(item => {
-  //         // if there is such item in the cart
-  //         if (item.id === id) {
-  //           return { ...item, quantity: item.quantity + 1 }
-  //         } else {
-  //           // why would we return this?
-  //           return item
-  //         }
-  //       })
-  //     }
-  //   })
-  // }
-
 
   const increaseCartQuantity = (newItem) => {
     setCartItems(currItems => {
@@ -49,7 +29,6 @@ export const ShoppingCartProvider = ({ children }) => {
           if (item.cartItemId === newItem.cartItemId) {
             return { ...newItem, quantity: newItem.quantity + 1 }
           } else {
-            // why would we return this?
             return item
           }
         })
@@ -70,7 +49,6 @@ export const ShoppingCartProvider = ({ children }) => {
           if (item.cartItemId === existingItem.cartItemId) {
             return { ...item, quantity: existingItem.quantity - 1 }
           } else {
-            // why would we return this?
             return item
           }
         })
