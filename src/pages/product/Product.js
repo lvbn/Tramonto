@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Product.module.css'
 import List from '../../components/list/List'
-import { useLocation } from "react-router-dom"
+import { useLocation, useParams } from "react-router-dom"
 
 import storeItems from '../../data/items.json'
 
@@ -9,13 +9,10 @@ import { useShoppingCart } from '../../context/ShoppingCartContext'
 
 export default function Product() {
   const { increaseCartQuantity } = useShoppingCart()
+  const { openCart } = useShoppingCart()
 
-  const location = useLocation()
-  // console.log(location.pathname)
-  const re = /[0-9]/g;
-  const id = location.pathname.match(re)[0]
-
-  const item = storeItems.find(item => item.id == id)
+  const param = useParams()
+  let item = storeItems.find(item => String(item.id) === param.id)
 
 
   const newItem = {
@@ -38,13 +35,11 @@ export default function Product() {
       else s.classList.remove('selected')
     })
     newItem.size = size;
-    // console.log(size)
   }
 
   const handleGiftWrap = () => {
     if (newItem.gift_wrap === false) newItem.gift_wrap = true;
     else newItem.gift_wrap = false;
-    // console.log(newItem)
   }
 
   return (
@@ -91,8 +86,10 @@ export default function Product() {
 
           <button
             className={styles.add}
-            // onClick={() => increaseCartQuantity(item.id)}
-            onClick={() => increaseCartQuantity(newItem)}
+            onClick={() => {
+              increaseCartQuantity(newItem);
+              openCart()
+            }}
           >
             ADD TO CART
           </button>

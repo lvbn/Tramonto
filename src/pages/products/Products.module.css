@@ -7,9 +7,6 @@
 .list {
   width: 100vw;
   padding: 0;
-  /* display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly; */
 
   box-sizing: border-box;
 	display: grid;
@@ -17,7 +14,6 @@
 	grid-gap: 1.5em;
 	grid-template-columns: repeat(4, 20vw);
 	margin: 0;
-	/* padding: .75em; */
 	min-height: 100vh;
   justify-content: center;
 }

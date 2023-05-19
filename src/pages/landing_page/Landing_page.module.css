@@ -65,56 +65,6 @@
 }
 
 
-
-
-/* Second Atempt */
-
-/*
-.container {
-  display: flex;
-  width: 100vw;
-  height: 90vh;
-  margin-top: 73px;
-}
-
-.cristopher {
-  background-image: url('./images/christopher-campbell.jpg');
-  background-size: cover;
-  overflow: scroll;
-}
-
-.ryan {
-  background-image: url('./images/ryan-jacobson.jpg');
-  background-size: cover;
-  overflow: scroll;
-}
-
-.container > div {
-  flex: 1;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  transition: all .8s ease-in-out;
-}
-
-.container > div.ryan {
-  background-size: 100% auto;
-
-}
-
-.container > div:hover {
-  flex: 2;
-}
- */
-
-
-/* Second Atempt */
-
-
-
-
-
-
 /* ------------ SHOP BY ------------ */
 
 .shop_by {
@@ -124,9 +74,6 @@
 
 h5, h1 {
   margin: 0px;
-  /* background: -webkit-linear-gradient(#be0000, #ffb800);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 
   background-color: red;
 
