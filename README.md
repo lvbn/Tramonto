@@ -6,6 +6,15 @@ https://deft-biscochitos-b655e1.netlify.app/
 
 <img width="1440" alt="Tramonto_landing" src="https://github.com/lvbn/Tramonto/assets/65773848/d2701fb3-b430-4006-b48e-29876c8f919f">
 
+## About this project
+
+This project is the frontend of Tramont's online shop. 
+
+## Frontend
+
+React + JavaScript + Context API + CSS
+
+This project was created with `create-react-app`. Context API was used to manage states. Vanilla CSS was chosen to style the apllication and the css modules was the preferred approach.
 
 ## Available Scripts
 
