@@ -23,7 +23,9 @@ Provides an overview of products and categories, providing the user a starting p
 ### * products page: 
 Users can browse through products. Only the price is displayed bellow the product image. The client's preference is to follow a higly minimalistic approach. 
 ### * Shopping Cart:
-The shopping cart floats to the right. Is accessible anywhere in the application in order to allow the custommer to keep track of it without interrupting the shopping flow, increasing sales and providing a better user expierence. It is also resizable for the convinience of the user's screen.
+- The shopping cart floats to the right. 
+- Is accessible anywhere in the application in order to allow the custommer to keep track of it without interrupting the shopping flow, increasing sales and providing a better user expierence. 
+- It is also resizable for the convinience of the user's screen.
 
 ## Available Scripts
 
