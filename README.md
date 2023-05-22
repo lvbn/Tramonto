@@ -48,7 +48,3 @@ The build is minified and the filenames include the hashes.\
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-
-### Frontend
-
-React
