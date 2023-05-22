@@ -16,6 +16,15 @@ React + JavaScript + Context API + CSS
 
 This project was created with `create-react-app`. Context API was used to manage states. Vanilla CSS was chosen to style the apllication and the css modules was the preferred approach.
 
+## Features
+
+### * Landing page:
+Provides an overview of products and categories, providing the user a starting point.
+### * products page: 
+Users can browse through products. Only the price is displayed bellow the product image. The client's preference is to follow a higly minimalistic approach. 
+### * Shopping Cart:
+The shopping cart floats to the right. Is accessible anywhere in the application in order to allow the custommer to keep track of it without interrupting the shopping flow, increasing sales and providing a better user expierence.
+
 ## Available Scripts
 
 ### `npm start`
