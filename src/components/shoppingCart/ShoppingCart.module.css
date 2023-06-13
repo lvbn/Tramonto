@@ -36,6 +36,9 @@
 
 .close {
   cursor: pointer;
+  font-family: serif;
+  rotate: 45deg;
+  font-weight: lighter;
 }
 
 .list {
@@ -91,11 +94,15 @@
   border: 0.5px solid rgba(134, 134, 134, 0.5);
   width: 100%;
   min-width: fit-content;
-  height: 6vh;
+  height: fit-content;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.checkoutMargin h1 {
+  padding: 20px;
 }
 
 .checkout > p:hover {

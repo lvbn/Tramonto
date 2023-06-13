@@ -10,6 +10,12 @@ body {
   background-color: black;
 }
 
+:root {
+  /* --mainTextAndMarginColors: rgba(255, 255, 255, 0.583); */
+  --mainTextAndMarginColors: rgba(134, 134, 134, 0.5);
+  --white: #faf0e6;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

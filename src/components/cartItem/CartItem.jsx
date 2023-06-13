@@ -28,14 +28,15 @@ export default function CartItem({ cartItemId }) {
         </div>
         <p>{item.price}</p>
         <div className={styles.quantity}>
-          <p className={styles.increase} onClick={() => increaseCartQuantity(item)}>+</p>
-          <p>{item.quantity}</p>
           <p className={styles.decrease} onClick={() => decreaseCartQuantity(item)}>-</p>
+          <p>{item.quantity}</p>
+          <p className={styles.increase} onClick={() => increaseCartQuantity(item)}>+</p>
         </div>
         <p className={styles.subtotal} >{item.price * item.quantity}</p>
 
-        <p className={styles.removeItem} onClick={() => removeFromCart(item.cartItemId)}>X</p>
+
       </div>
+      <p className={styles.removeItem} onClick={() => removeFromCart(item.cartItemId)}>+</p>
     </div>
   )
 }

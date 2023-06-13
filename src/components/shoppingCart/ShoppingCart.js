@@ -47,7 +47,7 @@ export default function ShoppingCart() {
 
       <div className={styles.cartAndClose}>
         <h1>Cart</h1>
-        <h1 className={styles.close} onClick={closeCart}>X</h1>
+        <h1 className={styles.close} onClick={closeCart}>+</h1>
       </div>
 
       <ul className={styles.list}>

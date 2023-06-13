@@ -10,6 +10,7 @@ import Footer from './components/footer/Footer'
 // pages
 import LandingPage from './pages/landing_page/LandingPage'
 import About from './pages/about/About'
+import WorkWithUs from './pages/work-with-us/WorkWithUs'
 import ScrollToTop from './components/ScrollToTop'
 import Products from './pages/products/Products'
 import Product from './pages/product/Product'
@@ -31,6 +32,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={LandingPage} />
             <Route exact path='/about' component={About} />
+            <Route exact path='/workwithus' component={WorkWithUs} />
             <Route exact path='/products' component={Products} />
             <Route exact path='/product/:id' component={Product} />
           </Switch>
