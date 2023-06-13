@@ -40,12 +40,12 @@ h1 {
 
 p {
   text-align: initial;
-  color: rgba(134, 134, 134, 0.5);
+  color: var(--mainTextAndMarginColors);
 }
 
 .price {
   font-size: 45px;
-  color: rgba(134, 134, 134, 0.5);
+  color: var(--mainTextAndMarginColors);
   margin-bottom: 10px;
   margin-top: 0;
 }
@@ -68,7 +68,7 @@ p {
   width: 20px;
   height: 20px;
   background: transparent;
-  border: 0.5px solid rgba(134, 134, 134, 0.5);
+  border: 0.5px solid var(--mainTextAndMarginColors);
   cursor: pointer;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
@@ -88,7 +88,7 @@ p {
 .sizes>div {
   background-color: transparent;
   border: none;
-  color:rgba(134, 134, 134, 0.5);
+  color: var(--mainTextAndMarginColors);
   cursor: pointer;
 }
 
@@ -121,8 +121,8 @@ p {
   min-width: fit-content;
   height: 70px;
   font-size: 20px;
-  color: rgba(134, 134, 134, 0.5);
-  border: 0.5px solid rgba(134, 134, 134, 0.5);
+  color: var(--mainTextAndMarginColors);
+  border: 0.5px solid var(--mainTextAndMarginColors);
   cursor: pointer;
   background-color: transparent;
   align-self: center;

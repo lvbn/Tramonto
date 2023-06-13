@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+
+  position: relative;
 }
 
 .img {
@@ -68,9 +70,11 @@
 
 .removeItem {
   position: absolute;
-  top: 0px;
-  right: 0px;
-
+  font-family:serif ;
+  top: 7px;
+  right: 7px;
+  rotate: 45deg;
+  margin: 0px;
   cursor: pointer;
 
   background-image: linear-gradient(45deg, #be0000, #ffb800);

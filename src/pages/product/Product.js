@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Product.module.css'
 import List from '../../components/list/List'
 import { useLocation, useParams } from "react-router-dom"
@@ -7,15 +7,21 @@ import storeItems from '../../data/items.json'
 
 import { useShoppingCart } from '../../context/ShoppingCartContext'
 
+const sizes = {
+  activeSize: { size: 'M' },
+  sizes: [{ size: 'S' }, { size: 'M' }, { size: 'L' }, { size: 'XL' }]
+}
+
 export default function Product() {
-  const { increaseCartQuantity } = useShoppingCart()
-  const { openCart } = useShoppingCart()
 
   const param = useParams()
   let item = storeItems.find(item => String(item.id) === param.id)
 
+  const { increaseCartQuantity } = useShoppingCart()
+  const { openCart } = useShoppingCart()
 
-  const newItem = {
+  const [sizeState, setSizeState] = useState(sizes)
+  const [newItem, setNewItem] = useState({
     cartItemId: Math.floor(Math.random() * 10000),
     id: item.id,
     title: item.title,
@@ -26,15 +32,46 @@ export default function Product() {
     quantity: null,
     src_img: item.src_img,
     imgUrl: item.imgUrl
+  })
+
+
+  // let newItem = {
+  //   cartItemId: Math.floor(Math.random() * 10000),
+  //   id: item.id,
+  //   title: item.title,
+  //   price: item.price,
+  //   gift_wrap: false,
+  //   size: null,
+  //   color: null,
+  //   quantity: null,
+  //   src_img: item.src_img,
+  //   imgUrl: item.imgUrl
+  // }
+
+  const handleSizeSelection = (e, index) => {
+
+    setSizeState({
+      ...sizeState, activeSize: sizeState?.sizes[index]
+    })
+
+    const size = e.currentTarget.textContent
+    const productWithSize = {
+      ...item, size: size
+    }
+
+    // newItem.size = sizeState.sizes[index];
+    setNewItem({...newItem, ...productWithSize})
   }
 
-  const handleSizeSelection = (size) => {
-    const sizes = document.querySelectorAll('.size')
-    sizes.forEach(s => {
-      if (s.innerText === size) s.classList.add('selected')
-      else s.classList.remove('selected')
-    })
-    newItem.size = size;
+  // console.log('ACTIVE SIZE: ', sizeState.activeSize)
+  // console.log('NEW ITEM: ', newItem)
+
+  const activeClass = (index) => {
+    if (sizeState.activeSize === sizeState.sizes[index]) {
+      return `${styles.selected}`
+    } else {
+      return ''
+    }
   }
 
   const handleGiftWrap = () => {
@@ -70,19 +107,20 @@ export default function Product() {
 
           </div>
 
-          {/* <div className={styles.sizes}>
-            <p>S</p>
-            <p>M</p>
-            <p>L</p>
-            <p>XL</p>
-          </div> */}
-
           <div className={styles.sizes}>
-            <div className='size' onClick={() => handleSizeSelection('S')}>S</div>
-            <div className='size' onClick={() => handleSizeSelection('M')}>M</div>
-            <div className='size' onClick={() => handleSizeSelection('L')}>L</div>
-            <div className='size' onClick={() => handleSizeSelection('XL')}>XL</div>
+            {
+              sizes.sizes.map((size, index) => (
+                <div
+                  key={size.size}
+                  className={`size ${activeClass(index)}`}
+                  onClick={(e) => handleSizeSelection(e, index)}
+                >
+                  {size.size}
+                </div>
+              ))
+            }
           </div>
+
 
           <button
             className={styles.add}

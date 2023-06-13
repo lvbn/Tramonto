@@ -18,7 +18,7 @@
 
 .footer_container > P {
   text-align: center;
-  color:  rgba(134, 134, 134, 0.5);
+  color:  var(--mainTextAndMarginColors);
   font-size: small;
 
   margin-top: 156px;
@@ -33,14 +33,14 @@ input.news_letters {
   height: 60px;
   padding: 5px 10px;
   border: none;
-  border-bottom: 0.5px solid rgba(134, 134, 134, 0.5);
-  caret-color: 0.5px solid rgba(134, 134, 134, 0.5);
+  border-bottom: 0.5px solid var(--mainTextAndMarginColors);
+  caret-color: 0.5px solid var(--mainTextAndMarginColors);
 }
 
 .news_letters, textarea {
   background: transparent;
   outline: none;
-  color: rgba(134, 134, 134, 0.5);
+  color: var(--mainTextAndMarginColors);
   font-size: larger;
 }
 
@@ -51,15 +51,15 @@ form.news_letters {
   width: 90vw;
   align-items: center;
   padding-bottom: 30px;
-  border-bottom: 0.5px solid rgba(134, 134, 134, 0.5);
+  border-bottom: 0.5px solid var(--mainTextAndMarginColors);
 }
 
 form.news_letters > button {
   width: 60px;
   height: 60px;
   background: transparent;
-  color: rgba(134, 134, 134, 0.5);
-  border: 0.5px solid rgba(134, 134, 134, 0.5);
+  color: var(--mainTextAndMarginColors);
+  border: 0.5px solid var(--mainTextAndMarginColors);
   margin-left: 60px;
   cursor: pointer;
   font-size: larger;
@@ -70,7 +70,7 @@ form.news_letters > button {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100vw;
-  color: rgba(134, 134, 134, 0.5);
+  color: var(--mainTextAndMarginColors);
   font-size: small;
 }
 
@@ -94,7 +94,7 @@ form.news_letters > button {
   box-sizing: border-box;
   padding: 20px 0;
   text-align: left;
-  color:  rgba(134, 134, 134, 0.5);
+  color:  var(--mainTextAndMarginColors);
   font-size: small;
-  border-top: 0.5px solid rgba(134, 134, 134, 0.5);
+  border-top: 0.5px solid var(--mainTextAndMarginColors);
 }

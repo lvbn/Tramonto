@@ -29,9 +29,11 @@ export default function Landing_page() {
         </div>
         <div className={styles.pic}>
           <img src={require('../../images/alexander-krivitskiy.jpg')} alt=''/>
+          <div className={styles.collections}>Winter</div>
         </div>
         <div className={styles.pic}>
           <img src={require('../../images/juan-manuel-merino.jpg')} alt=''/>
+          <div className={styles.collections}>Summer</div>
         </div>
         <div className={styles.pic}>
           <img src={require('../../images/Snow_Mountains.png')} alt=''/>
