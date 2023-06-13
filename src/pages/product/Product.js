@@ -86,7 +86,11 @@ export default function Product() {
 
         <div className={styles.productInfo}>
           <div className={styles.title}>
-            <h5>classics</h5>
+            <div className={styles.tags}>
+              {item.category_ids.map((category, index) => (
+                <h5 key={index}>{category}</h5>
+              ))}
+            </div>
             <h1>{item.title}</h1>
             <p>{item.description}</p>
           </div>

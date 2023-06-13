@@ -33,7 +33,7 @@ function App() {
             <Route exact path='/' component={LandingPage} />
             <Route exact path='/about' component={About} />
             <Route exact path='/workwithus' component={WorkWithUs} />
-            <Route exact path='/products' component={Products} />
+            <Route exact path='/products/:category' component={Products} />
             <Route exact path='/product/:id' component={Product} />
           </Switch>
 

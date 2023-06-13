@@ -1,11 +1,12 @@
 import React from 'react'
 
 import styles from './Products.module.css'
-import { Link } from 'react-router-dom'
+import { Link, useParams} from 'react-router-dom'
 import productsArray from '../../data/items.json'
 
 export default function Products() {
 
+  const { category } = useParams()
   console.log(productsArray)
 
   return (
@@ -14,7 +15,7 @@ export default function Products() {
         {
           productsArray
             .filter(p => {
-              if (p.category_ids.includes(1)) {
+              if (p.category_ids.includes(category)) {
                 return p
               }
             })
