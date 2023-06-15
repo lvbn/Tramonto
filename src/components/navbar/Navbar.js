@@ -10,10 +10,12 @@ export default function Navbar() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        <div className={styles.logo}></div>
+        <Link to='/'>
+          <div className={styles.logo}></div>
           <h1 className={styles.tramonto}>
-            <Link to='/'>TRAMONTO</Link>
+            TRAMONTO
           </h1>
+        </Link>
       </div>
 
       <form>
@@ -22,7 +24,7 @@ export default function Navbar() {
 
       <div className={styles.right}>
         <div className={styles.cart} onClick={openCart}>{cartQuantity}</div>
-        <div className={styles.thumbnail}></div>
+        {/* <div className={styles.thumbnail}></div> */}
       </div>
     </div>
   )

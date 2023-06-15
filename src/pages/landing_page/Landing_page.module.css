@@ -33,7 +33,6 @@
 .collections {
   width: 70%;
   height: 100px;
-  color: rgba(134, 134, 134, 0.9);
 
   position: absolute;
   left: 0;
@@ -49,9 +48,9 @@
   font-size: 20px;
 }
 
-.cristopher:hover > .collections, .pic:hover > .collections {
+.cristopher:hover > .collections, .pic:hover .collections {
   bottom: 0;
-
+  color: rgba(134, 134, 134, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +61,7 @@
 .ryan:hover > .collections,
 .pic:nth-child(2):hover > .collections {
   bottom: 0;
-
+  color: rgb(216, 216, 216);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,4 +118,20 @@ h5, h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+
+  .cristopher {
+    width: 50vw;
+  }
+
+  .ryan {
+    width: 50vw;
+  }
+  
+  .collections {
+    width: 90%;
+  }
 }

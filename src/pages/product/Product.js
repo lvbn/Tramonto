@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Product.module.css'
 import List from '../../components/list/List'
-import { useLocation, useParams } from "react-router-dom"
+import { useLocation, useParams, Link } from "react-router-dom"
 
 import storeItems from '../../data/items.json'
 
@@ -21,6 +21,7 @@ export default function Product() {
   const { openCart } = useShoppingCart()
 
   const [sizeState, setSizeState] = useState(sizes)
+  const [mainImg, setMainImg] = useState(item.imgUrl[0])
   const [newItem, setNewItem] = useState({
     cartItemId: Math.floor(Math.random() * 10000),
     id: item.id,
@@ -82,13 +83,15 @@ export default function Product() {
   return (
     <>
       <div className={styles.container}>
-        <img src={require('../../images/' + item.src_img)} alt='' className={styles.mainImage} />
+        <img src={require('../../images/' + mainImg)} alt='' className={styles.mainImage} />
 
         <div className={styles.productInfo}>
           <div className={styles.title}>
             <div className={styles.tags}>
               {item.category_ids.map((category, index) => (
-                <h5 key={index}>{category}</h5>
+                <Link key={index} to={'/products/' + category}>
+                  <h5>{category}</h5>
+                </Link>
               ))}
             </div>
             <h1>{item.title}</h1>
@@ -137,9 +140,19 @@ export default function Product() {
           </button>
 
           <div className={styles.images}>
-            <img src={require('../../images/' + 'caique-nascimento.jpg')} alt='' className={styles.sideImage} />
+            {/* <img src={require('../../images/' + 'caique-nascimento.jpg')} alt='' className={styles.sideImage} />
             <img src={require('../../images/' + 'deji-akinyele.jpg')} alt='' className={styles.sideImage} />
-            <img src={require('../../images/' + 'ryan-jacobson.jpg')} alt='' className={styles.sideImage} />
+            <img src={require('../../images/' + 'ryan-jacobson.jpg')} alt='' className={styles.sideImage} /> */}
+
+            {item.imgUrl.map((img, index) => (
+              <img
+                key={index}
+                onClick={() => setMainImg(item.imgUrl[index])}
+                src={require('../../images/' + img)}
+                alt=''
+                className={styles.sideImage}
+              />
+            ))}
           </div>
 
         </div>

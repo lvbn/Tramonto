@@ -4,76 +4,65 @@
     "title": "t-shirt",
     "description": "soft and comfy touch. Cotton special.",
     "price": 75.00,
-    "category_ids": ["clothes", "t-shirt", "women"],
+    "category_ids": ["clothes", "t-shirt"],
     "sizes": ["S", "M", "L", "XL"],
     "colors": [1, 2, 3, 4, 5],
     "src_img": "alexander-krivitskiy.jpg",
-    "imgUrl": ["calvin-lupiya.jpg", "daniel-monteiro.jpg", "josue-escoto.jpg", "maria-fernanda-pissioli.jpg"]
+    "imgUrl": "alexander-krivitskiy.jpg"
   },
   {
     "id": 2,
     "title": "earrings",
     "description": "soft and comfy touch. Cotton special.",
     "price": 80.00,
-    "category_ids": ["jewelry", "women"],
+    "category_ids": ["jewelry"],
     "sizes": ["S", "M", "L", "XL"],
     "colors": [1, 2, 3, 4, 5],
     "src_img": "caique-nascimento.jpg",
-    "imgUrl": ["caique-nascimento.jpg", "amin-rk.jpg", "arun-sharma.jpg", "soha-sh.jpg"]
+    "imgUrl": "caique-nascimento.jpg"
   },
   {
     "id": 3,
     "title": "t-shirt",
     "description": "soft and comfy touch. Cotton special.",
     "price": 105.00,
-    "category_ids": ["clothes", "t-shirt", "men", "women"],
+    "category_ids": ["clothes", "t-shirt"],
     "sizes": ["S", "M", "L", "XL"],
     "colors": [1, 2, 3, 4, 5],
     "src_img": "christopher-campbell.jpg",
-    "imgUrl": ["christopher-campbell.jpg", "hamed-darzi.jpg", "maria-fernanda-pissioli.jpg", "malcolm-lightbody.jpg"]
+    "imgUrl": "christopher-campbell.jpg"
   },
   {
     "id": 4,
     "title": "hat",
     "description": "soft and comfy touch. Cotton special.",
     "price": 200.00,
-    "category_ids": ["hats", "women"],
+    "category_ids": ["hats"],
     "sizes": ["S", "M", "L", "XL"],
     "colors": [1, 2, 3, 4, 5],
     "src_img": "deji-akinyele.jpg",
-    "imgUrl": ["deji-akinyele.jpg", "allef-vinicius-II.jpg", "allef-vinicius-III.jpg", "allef-vinicius.jpg"]
+    "imgUrl": "deji-akinyele.jpg"
   },
   {
     "id": 5,
     "title": "earrings",
     "description": "soft and comfy touch. Cotton special.",
     "price": 305.00,
-    "category_ids": ["jewelry", "earrings", "women"],
+    "category_ids": ["jewelry"],
     "sizes": ["S", "M", "L", "XL"],
     "colors": [1, 2, 3, 4, 5],
     "src_img": "ilona-panych.jpg",
-    "imgUrl": ["alexander-krivitskiy.jpg", "caique-nascimento.jpg", "christopher-campbell.jpg", "ilona-panych.jpg"]
+    "imgUrl": "ilona-panych.jpg"
   },
   {
     "id": 6,
     "title": "bracelet",
     "description": "soft and comfy touch. Cotton special.",
     "price": 270.00,
-    "category_ids": ["jewelry", "bracelet", "women"],
+    "category_ids": ["jewelry"],
     "sizes": ["S", "M", "L", "XL"],
     "colors": [1, 2, 3, 4, 5],
     "src_img": "juan-manuel-merino.jpg",
-    "imgUrl": ["juan-manuel-merino.jpg", "1-bracelet.jpg", "2-bracelet.jpg", "3-bracelet.jpg"]
-  },
-  {
-    "id": 7,
-    "title": "perfume",
-    "description": "soft and comfy touch. Cotton special.",
-    "price": 270.00,
-    "category_ids": ["perfumes", "women", "men"],
-    "sizes": ["200", "400", "600"],
-    "colors": [1, 2, 3, 4, 5],
-    "src_img": "juan-manuel-merino.jpg",
-    "imgUrl": ["0-perfume.jpg", "1-perfume.jpg", "2-perfume.jpg", "3-perfume.jpg"]
+    "imgUrl": "juan-manuel-merino.jpg"
   }
 ]

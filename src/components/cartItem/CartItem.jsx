@@ -13,10 +13,10 @@ export default function CartItem({ cartItemId }) {
   const item = cartItems.find(i => i.cartItemId === cartItemId)
   if (item === null) return null
 
-  // console.log(item)
+  // console.log('ITEM: ', item)
   return (
     <div className={styles.item}>
-      <img src={require('../../images/' + item.src_img)} alt='' className={styles.img} />
+      <img src={require('../../images/' + item.imgUrl[0])} alt='' className={styles.img} />
 
       <div className={styles.itemDetails}>
         <div className={styles.titleAndSize}>
