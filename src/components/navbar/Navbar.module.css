@@ -19,7 +19,7 @@
   margin: 0;
 }
 
-.left {
+.left > * {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -96,4 +96,15 @@
   border-radius: 100%;
 
   margin-left: 15px;
+}
+
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  .tramonto {
+    display: none;
+  }
+
+  .searchbar {
+    min-width: 200px;
+  }
 }

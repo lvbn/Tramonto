@@ -1,6 +1,7 @@
 import React from 'react'
 import List from '../../components/list/List'
 import styles from './Landing_page.module.css'
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Landing_page() {
   return (
@@ -8,11 +9,15 @@ export default function Landing_page() {
       <div className={styles.container}>
         <div className={styles.cristopher}>
           <img src={require('../../images/christopher-campbell.jpg')} alt=''/>
-          <div className={styles.collections}>Men's Collection</div>
+          <Link to={'/products/' + 'men'} className={styles.collections}>
+            <div>Men's Collection</div>
+          </Link>
         </div>
         <div className={styles.ryan}>
           <img src={require('../../images/ryan-jacobson.jpg')} alt=''/>
-          <div className={styles.collections}>Women's Collection</div>
+          <Link to={'/products/' + 'women'} className={styles.collections}>
+            <div>Women's Collection</div>
+          </Link>
         </div>
       </div>
 
