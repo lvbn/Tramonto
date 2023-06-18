@@ -33,9 +33,12 @@ export default function Navbar() {
           value={value}
           onChange={(e) => setValue(e.target.value)}>
         </input>
-        <span className={`material-symbols-outlined ${styles.searchBttn}`}>
-          arrow_right_alt
-        </span>
+        <button className={styles.searchBttn}>
+        {/* → */}
+          <span className={`material-symbols-outlined`}>
+            arrow_right_alt
+          </span>
+        </button>
       </form>
 
       <div className={styles.right}>

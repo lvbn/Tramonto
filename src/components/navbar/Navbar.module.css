@@ -61,6 +61,8 @@
 .searchbarForm {
   position: relative;
   border: 0.5px solid var(--mainTextAndMarginColors);
+
+  display: flex;
 }
 
 .searchbar {
@@ -80,17 +82,26 @@
 }
 
 .searchBttn {
-  position: absolute;
-  top: 5px;
-  right: 5px;
   padding: 2px 6px;
-  border: 0.5px solid var(--mainTextAndMarginColors);
+  background: transparent;
+  border: none;
+  border-left: 0.5px solid var(--mainTextAndMarginColors);
   color: var(--mainTextAndMarginColors);
 }
 
 .searchBttn:hover {
   cursor: pointer;
-  color: linear-gradient(0deg, rgba(190, 0, 0, 1) 0%, rgba(255, 184, 0, 1) 100%);
+  background-color: red;
+
+  background-image: linear-gradient(45deg, #be0000, #ffb800);
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 
