@@ -58,13 +58,18 @@
   -moz-text-fill-color: transparent;
 }
 
+.searchbarForm {
+  position: relative;
+  border: 0.5px solid var(--mainTextAndMarginColors);
+}
+
 .searchbar {
   box-sizing: border-box;
   min-width: 470px;
   width: 30vw;
   height: 40px;
   padding: 5px 10px;
-  border: 0.5px solid var(--mainTextAndMarginColors);
+  border: none;
   caret-color: 0.5px solid var(--mainTextAndMarginColors);
 }
 
@@ -72,6 +77,20 @@
   background: transparent;
   outline: none;
   color: var(--mainTextAndMarginColors);
+}
+
+.searchBttn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 2px 6px;
+  border: 0.5px solid var(--mainTextAndMarginColors);
+  color: var(--mainTextAndMarginColors);
+}
+
+.searchBttn:hover {
+  cursor: pointer;
+  color: linear-gradient(0deg, rgba(190, 0, 0, 1) 0%, rgba(255, 184, 0, 1) 100%);
 }
 
 

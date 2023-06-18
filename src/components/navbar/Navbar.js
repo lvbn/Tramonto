@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Navbar.module.css'
 
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { useShoppingCart } from '../../context/ShoppingCartContext'
 
 export default function Navbar() {
   const { openCart, cartQuantity } = useShoppingCart()
+  const [value, setValue] = useState('')
+
+  const history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(value)
+    history.push('/products/' + value);
+  }
 
   return (
     <div className={styles.container}>
@@ -18,8 +27,15 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <form>
-        <input className={styles.searchbar}></input>
+      <form onSubmit={handleSubmit} className={styles.searchbarForm}>
+        <input
+          className={styles.searchbar}
+          value={value}
+          onChange={(e) => setValue(e.target.value)}>
+        </input>
+        <span className={`material-symbols-outlined ${styles.searchBttn}`}>
+          arrow_right_alt
+        </span>
       </form>
 
       <div className={styles.right}>
