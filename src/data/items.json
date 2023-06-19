@@ -6,7 +6,7 @@
     "price": 75.00,
     "category_ids": ["clothes", "t-shirt", "women"],
     "sizes": ["S", "M", "L", "XL"],
-    "colors": [1, 2, 3, 4, 5],
+    "colors": ["#ff4d12", "#ffdb12", "#6912ff", "#1269ff", "#ff1255"],
     "src_img": "alexander-krivitskiy.jpg",
     "imgUrl": ["calvin-lupiya.jpg", "daniel-monteiro.jpg", "josue-escoto.jpg", "maria-fernanda-pissioli.jpg"]
   },
@@ -17,7 +17,7 @@
     "price": 80.00,
     "category_ids": ["jewelry", "women"],
     "sizes": ["S", "M", "L", "XL"],
-    "colors": [1, 2, 3, 4, 5],
+    "colors": null,
     "src_img": "caique-nascimento.jpg",
     "imgUrl": ["caique-nascimento.jpg", "amin-rk.jpg", "arun-sharma.jpg", "soha-sh.jpg"]
   },
@@ -28,7 +28,7 @@
     "price": 105.00,
     "category_ids": ["clothes", "t-shirt", "men", "women"],
     "sizes": ["S", "M", "L", "XL"],
-    "colors": [1, 2, 3, 4, 5],
+    "colors": ["#ff4d12", "#ffdb12", "#6912ff", "#1269ff", "#ff1255"],
     "src_img": "christopher-campbell.jpg",
     "imgUrl": ["christopher-campbell.jpg", "hamed-darzi.jpg", "maria-fernanda-pissioli.jpg", "malcolm-lightbody.jpg"]
   },
@@ -39,7 +39,7 @@
     "price": 200.00,
     "category_ids": ["hats", "women"],
     "sizes": ["S", "M", "L", "XL"],
-    "colors": [1, 2, 3, 4, 5],
+    "colors": null,
     "src_img": "deji-akinyele.jpg",
     "imgUrl": ["deji-akinyele.jpg", "allef-vinicius-II.jpg", "allef-vinicius-III.jpg", "allef-vinicius.jpg"]
   },
@@ -50,7 +50,7 @@
     "price": 305.00,
     "category_ids": ["jewelry", "earrings", "women"],
     "sizes": ["S", "M", "L", "XL"],
-    "colors": [1, 2, 3, 4, 5],
+    "colors": null,
     "src_img": "ilona-panych.jpg",
     "imgUrl": ["alexander-krivitskiy.jpg", "caique-nascimento.jpg", "christopher-campbell.jpg", "ilona-panych.jpg"]
   },
@@ -61,7 +61,7 @@
     "price": 270.00,
     "category_ids": ["jewelry", "bracelet", "women"],
     "sizes": ["S", "M", "L", "XL"],
-    "colors": [1, 2, 3, 4, 5],
+    "colors": null,
     "src_img": "juan-manuel-merino.jpg",
     "imgUrl": ["juan-manuel-merino.jpg", "1-bracelet.jpg", "2-bracelet.jpg", "3-bracelet.jpg"]
   },
@@ -72,7 +72,7 @@
     "price": 270.00,
     "category_ids": ["perfumes", "women", "men"],
     "sizes": ["200", "400", "600"],
-    "colors": [1, 2, 3, 4, 5],
+    "colors": null,
     "src_img": "juan-manuel-merino.jpg",
     "imgUrl": ["0-perfume.jpg", "1-perfume.jpg", "2-perfume.jpg", "3-perfume.jpg"]
   }

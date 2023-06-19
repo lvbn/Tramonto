@@ -125,6 +125,57 @@ p {
   -moz-text-fill-color: transparent;
 }
 
+.colors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color {
+  height: 20px;
+  width: 20px;
+}
+
+.color:hover {
+  cursor: pointer;
+}
+
+/* .blackBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 26px;
+  width: 26px;
+  background-color: rgb(0, 0, 0);
+} */
+
+/* .unselectedColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  border: 1px solid #000000;
+}
+
+.selectedColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  background: linear-gradient(45deg, #be0000, #ffb800);
+} */
+
+.unselectedColor {
+  padding: 5px;
+  border: 1px solid #000000;
+}
+
+.selectedColor {
+  padding: 5px;
+  border: 1px solid var(--mainTextAndMarginColors);
+}
+
 .add {
   width: 100%;
   min-width: fit-content;

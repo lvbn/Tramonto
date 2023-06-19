@@ -29,25 +29,11 @@ export default function Product() {
     price: item.price,
     gift_wrap: false,
     size: null,
-    color: null,
+    selectedColor: null,
     quantity: null,
     src_img: item.src_img,
     imgUrl: item.imgUrl
   })
-
-
-  // let newItem = {
-  //   cartItemId: Math.floor(Math.random() * 10000),
-  //   id: item.id,
-  //   title: item.title,
-  //   price: item.price,
-  //   gift_wrap: false,
-  //   size: null,
-  //   color: null,
-  //   quantity: null,
-  //   src_img: item.src_img,
-  //   imgUrl: item.imgUrl
-  // }
 
   const handleSizeSelection = (e, index) => {
 
@@ -60,18 +46,22 @@ export default function Product() {
       ...item, size: size
     }
 
-    // newItem.size = sizeState.sizes[index];
-    setNewItem({...newItem, ...productWithSize})
+    setNewItem({ ...newItem, ...productWithSize })
   }
-
-  // console.log('ACTIVE SIZE: ', sizeState.activeSize)
-  // console.log('NEW ITEM: ', newItem)
 
   const activeClass = (index) => {
     if (sizeState.activeSize === sizeState.sizes[index]) {
       return `${styles.selected}`
     } else {
       return ''
+    }
+  }
+
+  const activeColorClass = (color) => {
+    if (color === newItem.selectedColor) {
+      return `${styles.selectedColor}`
+    } else {
+      return `${styles.unselectedColor}`
     }
   }
 
@@ -97,8 +87,6 @@ export default function Product() {
             <h1>{item.title}</h1>
             <p>{item.description}</p>
           </div>
-
-
 
           <div className={styles.priceAndGift}>
             <p className={styles.price}>{item.price}</p>
@@ -128,22 +116,42 @@ export default function Product() {
             }
           </div>
 
+          {
+            item.colors ?
+              <div className={styles.colors}>
+                {
+                  item.colors.map((color, index) => (
+                    <div key={color} className={`${activeColorClass(color)}`}>
+                      <div className={styles.blackBox}>
+                        <div
+                          className={`${styles.color}`}
+                          style={{ backgroundColor: color }}
+                          onClick={(e) => {
+                            setNewItem({ ...newItem, selectedColor: color });
+                          }}
+                        >
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+              : null
+          }
+
 
           <button
             className={styles.add}
             onClick={() => {
               increaseCartQuantity(newItem);
               openCart()
+              console.log(newItem)
             }}
           >
             ADD TO CART
           </button>
 
           <div className={styles.images}>
-            {/* <img src={require('../../images/' + 'caique-nascimento.jpg')} alt='' className={styles.sideImage} />
-            <img src={require('../../images/' + 'deji-akinyele.jpg')} alt='' className={styles.sideImage} />
-            <img src={require('../../images/' + 'ryan-jacobson.jpg')} alt='' className={styles.sideImage} /> */}
-
             {item.imgUrl.map((img, index) => (
               <img
                 key={index}
