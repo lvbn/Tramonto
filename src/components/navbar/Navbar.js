@@ -7,13 +7,21 @@ import { useShoppingCart } from '../../context/ShoppingCartContext'
 export default function Navbar() {
   const { openCart, cartQuantity } = useShoppingCart()
   const [value, setValue] = useState('')
+  const [placeHolder, setPlaceHolder] = useState('')
 
   const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(value)
-    history.push('/products/' + value);
+    if (value) {
+      history.push('/products/' + value)
+      setPlaceHolder('')
+      setValue('')
+    }
+    else {
+      setPlaceHolder('Please type something')
+    }
   }
 
   return (
@@ -31,6 +39,7 @@ export default function Navbar() {
         <input
           className={styles.searchbar}
           value={value}
+          placeholder={placeHolder}
           onChange={(e) => setValue(e.target.value)}>
         </input>
         <button className={styles.searchBttn}>
