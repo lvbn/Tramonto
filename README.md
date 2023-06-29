@@ -31,6 +31,10 @@ All details of the product are shown on this page, allowing the user to select c
 ### * Payment Page: 
 Stripe provides a checkout page, where the total value can be checked before choosing a payment method and proceeding to payment.
 
+## Responsiveness
+
+This project is mobile responsive. It works well on a 390px wide screens. On other screens, it might not fit perfectly yet.
+
 ## Available Scripts
 
 ### `npm start`
