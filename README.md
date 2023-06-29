@@ -38,7 +38,7 @@ Stripe provides a checkout page, where the total value can be checked before cho
 This project is mobile responsive. It works well on 390px wide screens. On other screens, it might not fit perfectly yet.
 
 <div>
-  ![IMG_6786795D94EA-1](https://github.com/lvbn/Tramonto/assets/65773848/ee12367f-e308-4883-b38f-4ef7e4ba5e19)
+ ![IMG_6786795D94EA-1](https://github.com/lvbn/Tramonto/assets/65773848/e4de3e11-1e23-4f08-9748-1f38adc7103c)
 
   ![IMG_0607](https://github.com/lvbn/Tramonto/assets/65773848/dca76899-37a5-47e8-a38a-a248fa079979)
   
