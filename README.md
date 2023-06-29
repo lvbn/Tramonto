@@ -22,10 +22,14 @@ This project was created with `create-react-app`. Context API was used to manage
 Provides an overview of products and categories, providing the user with a starting point.
 ### * products page: 
 Users can browse through products. Only the price is displayed below the product image. The client's preference is to follow a highly minimalistic approach. 
+### * product details page: 
+All details of the product are shown on this page, allowing the user to select color and size if the product offers that possibility.
 ### * Shopping Cart:
 - The shopping cart floats to the right. 
 - Is accessible anywhere in the application in order to allow the customer to keep track of it without interrupting the shopping flow, increasing sales and providing a better user experience. 
 - It is also resizable for the convenience of the user's screen.
+- - ### * Payment Page: 
+Stripe provides a checkout page, where the total value can be checked before choosing a payment method and proceeding to payment.
 
 ## Available Scripts
 
