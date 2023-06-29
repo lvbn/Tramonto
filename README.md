@@ -1,5 +1,3 @@
-![IMG_6786795D94EA-1](https://github.com/lvbn/Tramonto/assets/65773848/9bb4efd6-2b2c-475e-8dd2-80cbdf78520b)
-![IMG_0609](https://github.com/lvbn/Tramonto/assets/65773848/1ffa157b-c5b0-46b4-b30a-3cdc5bdec3a3)
 # TRAMONTO
 Tramonto is a sunset-inspired brand. 🌆
 
@@ -38,7 +36,7 @@ Stripe provides a checkout page, where the total value can be checked before cho
 This project is mobile responsive. It works well on 390px wide screens. On other screens, it might not fit perfectly yet.
 
 <div>
- ![IMG_6786795D94EA-1](https://github.com/lvbn/Tramonto/assets/65773848/e4de3e11-1e23-4f08-9748-1f38adc7103c)
+ ![IMG_6786795D94EA-1](https://github.com/lvbn/Tramonto/assets/65773848/9bb4efd6-2b2c-475e-8dd2-80cbdf78520b)
 
   ![IMG_0607](https://github.com/lvbn/Tramonto/assets/65773848/dca76899-37a5-47e8-a38a-a248fa079979)
   
