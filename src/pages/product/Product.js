@@ -21,7 +21,8 @@ export default function Product() {
   const { openCart } = useShoppingCart()
 
   const [sizeState, setSizeState] = useState(sizes)
-  const [mainImg, setMainImg] = useState(item.imgUrl[0])
+  const [imgArray, setImgArray] = useState(item.imgUrl[0].pictures)
+  const [mainImg, setMainImg] = useState(imgArray[0])
   const [newItem, setNewItem] = useState({
     cartItemId: Math.floor(Math.random() * 10000),
     id: item.id,
@@ -128,6 +129,8 @@ export default function Product() {
                           style={{ backgroundColor: color }}
                           onClick={(e) => {
                             setNewItem({ ...newItem, selectedColor: color });
+                            setImgArray(item.imgUrl[item.colors.indexOf(color)].pictures);
+                            setMainImg(item.imgUrl[item.colors.indexOf(color)].pictures[0])
                           }}
                         >
                         </div>
@@ -152,10 +155,10 @@ export default function Product() {
           </button>
 
           <div className={styles.images}>
-            {item.imgUrl.map((img, index) => (
+            {imgArray.map((img, index) => (
               <img
                 key={index}
-                onClick={() => setMainImg(item.imgUrl[index])}
+                onClick={() => setMainImg(imgArray[index])}
                 src={require('../../images/' + img)}
                 alt=''
                 className={styles.sideImage}

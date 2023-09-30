@@ -61,7 +61,7 @@ export default function Products() {
                   .map(p => (
                     <Link key={p.id} to={'/product/' + p.id}>
                       <li key={p.id} className={styles.li}>
-                        <img src={require('../../images/' + p.imgUrl[0])} alt='' />
+                        <img src={require('../../images/' + p.imgUrl[0].pictures[0])} alt='' />
                         <div className={styles.price}>{p.price}</div>
                       </li>
                     </Link>

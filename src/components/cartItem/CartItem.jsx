@@ -16,7 +16,7 @@ export default function CartItem({ cartItemId }) {
   // console.log('ITEM: ', item)
   return (
     <div className={styles.item}>
-      <img src={require('../../images/' + item.imgUrl[0])} alt='' className={styles.img} />
+      <img src={require('../../images/' + item.imgUrl[0].pictures[0])} alt='' className={styles.img} />
 
       <div className={styles.itemDetails}>
         <div className={styles.titleAndSize}>

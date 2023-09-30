@@ -120,7 +120,7 @@ h5, h1 {
   object-fit: cover;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 400px) {
   /* For mobile phones: */
 
   .cristopher {
@@ -130,7 +130,7 @@ h5, h1 {
   .ryan {
     width: 50vw;
   }
-  
+
   .collections {
     width: 90%;
   }
