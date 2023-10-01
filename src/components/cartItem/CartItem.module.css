@@ -89,7 +89,7 @@
   -moz-text-fill-color: transparent;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 640px) {
 
   .container {
     box-sizing: border-box;

@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 15px 40px;
+  padding: 15px 20px;
   border-bottom: 0.5px solid var(--mainTextAndMarginColors);
 
   margin: 0;
@@ -36,7 +36,6 @@
 .logo {
   width: 40px;
   height: 40px;
-  margin-right: 15px;
 
   background: rgb(190, 0, 0);
   background: linear-gradient(0deg, rgba(190, 0, 0, 1) 0%, rgba(255, 184, 0, 1) 100%);
@@ -44,6 +43,7 @@
 
 .tramonto {
   margin: 0px;
+  margin-left: 15px;
 
   background-color: red;
 
@@ -60,7 +60,7 @@
 
 .searchbarForm {
   position: relative;
-  border: 0.5px solid var(--mainTextAndMarginColors);
+  /* border: 1px solid var(--mainTextAndMarginColors); */
   box-sizing: border-box;
 
   display: flex;
@@ -71,22 +71,25 @@
   min-width: 470px;
   width: 30vw;
   height: 40px;
-  padding: 4px 10px;
-  border: none;
+  max-height: 40px;
+  padding: 0px 10px;
+  /* border: none; */
+  border: 1px solid var(--mainTextAndMarginColors);
   caret-color: 0.5px solid var(--mainTextAndMarginColors);
 }
 
 .searchbar, textarea {
+  box-sizing: border-box;
   background: transparent;
   outline: none;
   color: var(--mainTextAndMarginColors);
 }
 
 .searchBttn {
-  padding: 6px;
+  padding: 0px 6px;
   background: transparent;
   border: none;
-  border-left: 0.5px solid var(--mainTextAndMarginColors);
+  border: 1px solid var(--mainTextAndMarginColors);
   color: var(--mainTextAndMarginColors);
 }
 
@@ -129,7 +132,7 @@
   margin-left: 15px;
 }
 
-@media only screen and (min-width: 400px) {
+@media screen and (max-width: 640px) {
   /* For mobile phones: */
   .tramonto {
     display: none;

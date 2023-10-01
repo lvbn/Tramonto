@@ -111,7 +111,7 @@ h5, h1 {
   position: relative;
   box-sizing: border-box;
   width: 50vw;
-  height: 90vh;
+  height: 100vh;
 }
 
 .pic img {
@@ -120,7 +120,7 @@ h5, h1 {
   object-fit: cover;
 }
 
-@media only screen and (min-width: 400px) {
+@media screen and (max-width: 640px) {
   /* For mobile phones: */
 
   .cristopher {
@@ -131,6 +131,13 @@ h5, h1 {
     width: 50vw;
   }
 
+  .pic{
+    position: relative;
+    box-sizing: border-box;
+    width: 50vw;
+    height: 50vh;
+  }
+  
   .collections {
     width: 90%;
   }

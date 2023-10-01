@@ -36,7 +36,7 @@ ul {
   backdrop-filter: blur(21px);
 }
 
-@media only screen and (min-width: 400px) {
+@media screen and (max-width: 640px) {
 
   /* For mobile phones: */
   ul {
